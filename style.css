@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fixed-header {
+  background-color: #4d636f;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.fixed-header__left-side {
+  display: flex;
+  align-items: center;
+}
+
+.fixed-header__left-side__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #3a4b53;
+  color: white;
+  padding: 16px 24px;
+}
+
+.fixed-header__left-side__logo:hover {
+  background-color: #cccccc;
+  color: black;
+  cursor: pointer;
+}
+
+.home_icon {
+  font-size: 16px;
+}
+
+.header-left-icon {
+  padding: 12px 24px;
+  color: #ffffff;
+}
+
+.header-left-icon:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fixed-header__right-side {
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fixed-header__right-side:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fixed-header__right-side img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.fixed-header__left-side_notifications {
+  position: relative;
+  padding: 12px 24px;
+  color: #ffffff;
+}
+
+.fixed-header__left-side_notifications:hover {
+  color: #000;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.fixed-header__left-side_notifications ul {
+  background-color: white;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  box-shadow: 0 2px 5px 0 #aaa;
+}
+
+.fixed-header__left-side_notifications:hover ul {
+  display: block;
+}
+
+.fixed-header__left-side_notifications ul li {
+  color: #000;
+  padding: 8px 12px;
+}
+
+.fixed-header__left-side_notifications ul li:hover {
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.fixed-header__left-side_notifications__wrapper {
+  position: relative;
+}
+
+.fixed-header__left-side_notifications__wrapper .trois {
+  position: absolute;
+  left: 100%;
+  top: -4px;
+  background-color: green;
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 10px;
+}
